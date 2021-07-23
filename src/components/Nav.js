@@ -73,7 +73,8 @@ const StyledNav = styled.div`
     } 
     @media (max-width: 950px){
          left: 2.5%;
-        width: 95%
+        width: 95%;
+        height: 7vh;
     } 
      h3 {
          padding: 0 2em;
@@ -109,6 +110,9 @@ const StyledNav = styled.div`
              color: white;
             }
         }
+    }
+    #mobileNav {
+        transition: 0.3s;
     }
 
      /* nav overlay */

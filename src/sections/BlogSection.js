@@ -59,6 +59,9 @@ const StyledBlog = styled.div`
         flex-direction: column;
         align-items: center;
         position: relative;
+        @media (max-width: 1450px){
+            width: 95%;
+        } 
         h2 {
             margin: 8% 0 5% 0;
             font-size: 3em;
@@ -70,6 +73,10 @@ const StyledBlog = styled.div`
             display: flex;
             width: 80%;
             margin: auto;
+            @media (max-width: 650px){
+            flex-direction: column;
+            margin: 3em auto;
+            }
         }
         article {
             width: 45%;
@@ -82,13 +89,19 @@ const StyledBlog = styled.div`
             margin: 0 auto;
             border-radius: 8px;
             background: lightgray;
-            box-shadow: 6px 6px 10px rgba(133, 133, 133, 0.301);
+            box-shadow: 6px 6px 10px #7b45aa5c;
             padding: 1em;
+            @media (max-width: 650px){
+            width: 95%;
+            height: 100%;
+            margin: 2% auto;
+            }
         }
         .blogImage {
-            width: 480px;
-            border-radius: 8px;
-        }
+            width: 100%;
+            border-radius: 12px;
+            margin: 2em auto;
+            }
         .articleInfo {
             display: flex;
             align-items: center;
@@ -114,7 +127,7 @@ const StyledBlog = styled.div`
             margin: .5em 0 1em 0;
             letter-spacing: 1px;
         }
-
+    
 `;
 
 export default BlogSection;

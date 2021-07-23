@@ -54,6 +54,9 @@ const StyledRoom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 1450px){
+            width: 95%;
+        } 
     h2 {
         width: 80%;
         font-size: 3em;
@@ -67,6 +70,9 @@ const StyledRoom = styled.div`
         width: 90%;
         display: flex;
         margin: 3em auto;
+        @media (max-width: 650px){
+            width: 95%;
+        }
     }
     article {
         width: 32%;
@@ -77,7 +83,7 @@ const StyledRoom = styled.div`
         text-align: center;
         align-items: center;
         margin: 0 1em;
-        box-shadow: 6px 6px 6px rgba(133, 133, 133, 0.342);
+        box-shadow: 6px 6px 10px #7b45aa5c;
         border: 1px solid rgba(101, 78, 163, 0.534);
         border-radius: 8px;
         &:hover {

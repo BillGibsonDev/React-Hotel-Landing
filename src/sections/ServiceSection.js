@@ -57,6 +57,9 @@ const StyledService = styled.div`
         flex-direction: column;
         background: white;
         margin: auto;
+        @media (max-width: 1450px){
+            width: 95%;
+        } 
     .topAd,
     .bottomAd {
         display: flex;
@@ -64,8 +67,14 @@ const StyledService = styled.div`
         margin: 2% auto;
         justify-content: space-between;
         background: lightgray;
-        box-shadow: 6px 6px 10px rgba(133, 133, 133, 0.301);
+        box-shadow: 6px 6px 10px #7b45aa5c;
         border-radius: 12px;
+        @media (max-width: 650px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+        }
     }
     .topAd {
         margin-top: 5%;
@@ -74,7 +83,7 @@ const StyledService = styled.div`
         border-radius: 8px;
         width: 50%;
         height: 100%;
-        object-fit: fill;
+        margin: auto;
     }
     .rightAdText,
     .leftAdText {
@@ -84,6 +93,10 @@ const StyledService = styled.div`
         flex-direction: column;
         margin: 0 5%;
         width: 50%;
+        @media (max-width: 650px){
+            flex-direction: column;
+            width: 80%;
+        }
     }
     h4 {
         font-size: 1.5em;
@@ -114,21 +127,31 @@ const StyledService = styled.div`
         grid-template-rows: 1fr 1fr;
         grid-gap: 1em;
         margin: 2em 0;
+        @media (max-width: 650px){
+            width: 95%;
+            margin: auto;
+        } 
     }
     .service {
         display: flex;
         align-items: center;
+        @media (max-width: 650px){
+            flex-direction: column;
+        }
         p {
             font-size: 1em;
             margin: 1em 0;
         }
-    h6 {
-        font-size: 1.2em;
-    }
-    img {
-        width: 50px;
-        margin: 6px;
-    }
+        h6 {
+            font-size: 1.2em;
+        }
+        img {
+            width: 50px;
+            margin: 6px;
+            @media (max-width: 650px){
+            width: 30px;
+        } 
+        }
     }
 `;
 

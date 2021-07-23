@@ -59,12 +59,15 @@ const StyledLanding = styled.div`
     margin: auto;
     margin-top: 1%;
     @media (max-width: 1450px){
-        width: 95%
+        width: 95%;
     } 
+    @media (max-width: 650px){
+        
+    }
     .leftColor {
         width: 50%;
         height: 100%;
-        background: linear-gradient(to right, #7b45aa, white);
+        background: linear-gradient(to left, #7b45aa, white);
         border-top-left-radius: 12px;
         left: 0;
         top: 0;
@@ -82,6 +85,22 @@ const StyledLanding = styled.div`
         p {
             font-size: 2em;
             opacity: .7;
+        }
+    }
+    @media (max-width: 650px){
+        .leftColor, .homeImage {
+            top: 10%;
+        }
+        .leftColor{ 
+            width: 100%;
+        }
+        .homeImage {
+            display: none;
+        }
+    }
+    @media (max-width: 650px){
+        .leftText{
+            top: 10%;
         }
     }
     .homeContents {
@@ -108,27 +127,31 @@ const StyledLanding = styled.div`
         justify-content: center;
         align-items: center;
         border-radius: 8px;
-        box-shadow: 6px 6px 20px rgba(133, 133, 133, 0.205);
+        box-shadow: 6px 6px 10px #7b45aa5c;
         z-index: 9;
         left: 10%;
         @media (max-width: 1550px){
             font-size: 95%;
         } 
         @media (max-width: 1472px){
-            width: 70%
+            width: 70%;
+            left: 15%;
         } 
         @media (max-width: 1200px){
-            width: 80%
+            width: 80%;
+            left: 5%;
         } 
         @media (max-width: 1040px){
             width: 90%
         } 
         @media (max-width: 900px){
-            width: 100%
+            width: 100%;
+            left: 0;
         } 
-        @media (max-width: 615px){
+        @media (max-width: 651px){
+            left: 0;
             flex-direction: column;
-            position: relative;
+            height: 40%;
         }
     }
     select,
@@ -144,19 +167,19 @@ const StyledLanding = styled.div`
         color: #7b45aa;
         font-weight: 600;
         cursor: pointer;
+        @media (max-width: 650px){
+            font-size: 1.4em;
+        }
     }
     input,
     select {
         border: solid #7b45aa 1px;
-    }
-    input,
-    select {
         &:hover {
             background: lightgray;
         }
     }
     input {
-        display: flex;
+        display: flex; 
     }
     select {
         background-color: white;
@@ -206,6 +229,9 @@ const StyledLanding = styled.div`
         position: absolute;
         transform: translateX(-2%);
     }
+    label {
+        width: 80%;
+    }
     .dataBtn {
         font-size: 1em;
         padding: 0 2em;
@@ -216,6 +242,9 @@ const StyledLanding = styled.div`
         font-weight: 700;
         color: white;
         cursor: pointer;
+        @media (max-width: 650px){
+            font-size: 2em;
+        }
         &:hover {
             transform: scale(1.1);
             transition: 0.3s ease;

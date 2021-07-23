@@ -61,12 +61,21 @@ const StyledFooter = styled.div`
     border-radius: 0 0 12px 12px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1450px){
+            width: 95%;
+        } 
+        @media (max-width: 650px){
+           height: 100%;
+        }
     .contactContainer {
         width: 100%;
         height: 70%;
         display: flex;
         margin: 0 auto;
         background: #7b45aa;
+        @media (max-width: 650px){
+            flex-direction: column;
+        }
     .contactListContainer {
         display: flex;
         justify-content: center;
@@ -80,6 +89,9 @@ const StyledFooter = styled.div`
         text-decoration: underline;
         text-underline-position: under;
         margin: .5em;
+        @media (max-width: 650px){
+            font-size: 3em;
+        }
         
     }
     h6 {
@@ -87,6 +99,9 @@ const StyledFooter = styled.div`
         opacity: .9;
         cursor: pointer;
         margin: 3px;
+        @media (max-width: 650px){
+            font-size: 2em;
+        }
         &:hover {
             color: white;
             transform: scale(1.1);
@@ -95,6 +110,10 @@ const StyledFooter = styled.div`
     }
     label {
         margin: 8px;
+        @media (max-width: 650px){
+            font-size: 2em;
+            margin: 2em auto;
+        }
     }
     input,
     button {
@@ -124,6 +143,9 @@ const StyledFooter = styled.div`
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media (max-width: 650px){
+            flex-direction: column;
+        }
     .iconContainer {
     display: flex;
     width: 30%;
@@ -141,6 +163,9 @@ const StyledFooter = styled.div`
             transition: 0.3s;
         }
     }
+}
+p {
+    font-size: 2em;
 }
 }
 `;

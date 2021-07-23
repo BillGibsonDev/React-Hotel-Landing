@@ -40,6 +40,13 @@ const StyledReview = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: 1450px){
+            width: 95%;
+        } 
+        @media (max-width: 650px){
+            flex-direction: column;
+            height: 100%;
+        }
         h2 {
             font-size: 3em;
             border-top: solid 3px #7b45aa;
@@ -54,9 +61,16 @@ const StyledReview = styled.div`
             border-radius: 8px;
             display: flex;
             margin: 2em auto;
+            @media (max-width: 650px){
+                flex-direction: column;
+            }
             img {
-            width: 320px;
-            border-radius: 8px;
+                width: 320px;
+                border-radius: 8px;
+            @media (max-width: 650px){
+                 height: 20%;
+                width: 100%;
+                }
             }
         .btnContainer {
             position: absolute;
@@ -74,28 +88,30 @@ const StyledReview = styled.div`
                 transition: 0.3s;
             }
         }
-        button i {
-            font-size: 2em;
-            margin: 8px 8px;
-        }
     }
     .reviewInfo {
         display: flex;
         flex-direction: column;
         margin: 3em;
         p {
-            font-size: 1em;
+            font-size: 1.2em;
             margin: 1em auto;
+            @media (max-width: 650px){
+                font-size: 2em;
+            }
         }
         h4 {
-            font-size: 1.2em;
+            font-size: 2em;
+            @media (max-width: 650px){
+                font-size: 3em;
+            }
         }
         .reviewerContainer {
             display: flex;
             margin: 1em;
             img {
-            width: 80px;
-            border-radius: 8px;
+                width: 50px;
+                border-radius: 8px;
             }
         }
         .reviewerWrapper {
@@ -105,6 +121,9 @@ const StyledReview = styled.div`
             flex-direction: column;
             h5 {
                 opacity: .7;
+                @media (max-width: 650px){
+                    font-size: 1.5em;
+                }
             }
         }
     }

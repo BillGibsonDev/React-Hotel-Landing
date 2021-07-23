@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 html {
     margin: auto;
     scroll-behavior: smooth;
-    background: #968f8f;
+    background: #7b45aaab;
     font-family: 'Poppins', sans-serif;
     @media (max-width: 1450px){
         font-size: 70%;

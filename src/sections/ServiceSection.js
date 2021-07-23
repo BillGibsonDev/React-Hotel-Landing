@@ -63,11 +63,18 @@ const StyledService = styled.div`
         width: 80%;
         margin: 2% auto;
         justify-content: space-between;
+        background: lightgray;
+        box-shadow: 6px 6px 10px rgba(133, 133, 133, 0.301);
+        border-radius: 12px;
+    }
+    .topAd {
+        margin-top: 5%;
     }
     .adImage {
         border-radius: 8px;
-        width: 480px;
-        box-shadow: 6px 6px 6px rgba(133, 133, 133, 0.5);
+        width: 50%;
+        height: 100%;
+        object-fit: fill;
     }
     .rightAdText,
     .leftAdText {

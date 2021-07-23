@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 // images
-import Hamburger from '../images/hamburgerWhite.png';
+import Hamburger from '../images/hamburgereBlack.png';
 
 const Nav = () => {
   
@@ -48,7 +48,7 @@ function toggleNav() {
                     <a href="#rooms">Book Now</a>
                 </div>
             </div>
-            <button id="openNavButton" onClick={toggleNav}><img src={Hamburger} alt="menu" id="hamburgerIcon" /></button>
+            <button id="openNavButton" onClick={toggleNav}><img src={Hamburger} alt="menu" id="hamburger" /></button>
     </StyledNav>
     )
 }
@@ -66,7 +66,15 @@ const StyledNav = styled.div`
      left: 15%;
      border-radius: 8px;
      transition: 0.3s; 
-     border: 1px solid rgba(101, 78, 163, 0.534);     
+     border: 1px solid rgba(101, 78, 163, 0.534);    
+     @media (max-width: 1450px){
+         left: 5%;
+        width: 90%
+    } 
+    @media (max-width: 950px){
+         left: 2.5%;
+        width: 95%
+    } 
      h3 {
          padding: 0 2em;
          font-size: 2.5em;
@@ -79,7 +87,7 @@ const StyledNav = styled.div`
          align-items: center;
          justify-content: space-around;
      a {
-         font-size: 1.5em;
+         font-size: 1.2em;
          color: black;
          transition: 0.3s;
          &:hover {
@@ -110,8 +118,7 @@ const StyledNav = styled.div`
          z-index: 1000;
          left: 0;
          top: 0;
-         background-color: rgb(0, 0, 0);
-         background-color: rgba(0, 0, 0, 0.9);
+         background: rgba(0, 0, 0, 0.938);
          overflow-x: hidden;
          transition: 0.5s;
          height: 100%;
@@ -134,21 +141,22 @@ const StyledNav = styled.div`
          &:focus {
              color: white;
              transform: scale(1.1);
-             transition: 1s ease;
+             transition: 0.3s;
          }
      }
      .overlay .closebtn {
          position: absolute;
          top: 20px;
          right: 45px;
-         font-size: 60px;
+         font-size: 8em;
+         cursor: pointer;
      }
      #openNavButton {
          display: none;
          align-items: center;
          justify-content: center;
-         font-size: 4em;
-         margin: auto;
+         font-size: 6em;
+         margin-right: 1em;
          color: rgb(101, 78, 163);
          cursor: pointer;
          &:hover {
@@ -169,28 +177,20 @@ const StyledNav = styled.div`
  
  
  @media screen and (max-width: 932px) {
-     #nav {
-         flex-wrap: wrap;
-         box-shadow: 6px 6px 6px rgb(133, 133, 133);
-     }
-     nav #bookBtn {
-         display: none;
-     }
-     nav li {
-         display: none;
-     }
-     #nav #hamburger {
-         display: flex;
-     }
- }
- 
- @media screen and (max-width: 732px) {
-     #nav {
-         width: 100%;
-         left: 0;
-     }
- }
-
+         nav{
+             display: none;
+         }
+        #openNavButton {
+            display: flex;
+            background: none;
+            border: none;
+            width: 50px;
+            #hamburger{
+                width: 50px;
+            }
+        }
+        
+}
 `;
 
 

@@ -51,7 +51,6 @@ const StyledLanding = styled.div`
     height: 100vh;
     width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
     border-top-left-radius: 12px;
@@ -59,12 +58,14 @@ const StyledLanding = styled.div`
     background: white;
     margin: auto;
     margin-top: 1%;
+    @media (max-width: 1450px){
+        width: 95%
+    } 
     .leftColor {
         width: 50%;
-        height: 80%;
+        height: 100%;
         background: linear-gradient(to right, #7b45aa, white);
         border-top-left-radius: 12px;
-        position: absolute;
         left: 0;
         top: 0;
     }
@@ -80,14 +81,14 @@ const StyledLanding = styled.div`
         }
         p {
             font-size: 2em;
+            opacity: .7;
         }
     }
     .homeContents {
         display: flex;
         width: 50%;
-        height: 80%;
-        align-items: center;
-        position: absolute;
+        height: 100%;
+        position: relative;
         right: 0;
         top: 0;
     }
@@ -99,7 +100,7 @@ const StyledLanding = styled.div`
     }
     .dateContainer {
         position: absolute;
-        bottom: 17%;
+        bottom: 0%;
         width: 80%;
         height: 10vh;
         background: white;
@@ -107,8 +108,28 @@ const StyledLanding = styled.div`
         justify-content: center;
         align-items: center;
         border-radius: 8px;
-        box-shadow: 6px 6px 6px rgba(133, 133, 133, 0.5);
+        box-shadow: 6px 6px 20px rgba(133, 133, 133, 0.205);
         z-index: 9;
+        left: 10%;
+        @media (max-width: 1550px){
+            font-size: 95%;
+        } 
+        @media (max-width: 1472px){
+            width: 70%
+        } 
+        @media (max-width: 1200px){
+            width: 80%
+        } 
+        @media (max-width: 1040px){
+            width: 90%
+        } 
+        @media (max-width: 900px){
+            width: 100%
+        } 
+        @media (max-width: 615px){
+            flex-direction: column;
+            position: relative;
+        }
     }
     select,
     label,

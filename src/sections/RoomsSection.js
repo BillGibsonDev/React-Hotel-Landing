@@ -77,7 +77,7 @@ const StyledRoom = styled.div`
         text-align: center;
         align-items: center;
         margin: 0 1em;
-        box-shadow: 6px 6px 6px rgb(133, 133, 133);
+        box-shadow: 6px 6px 6px rgba(133, 133, 133, 0.342);
         border: 1px solid rgba(101, 78, 163, 0.534);
         border-radius: 8px;
         &:hover {

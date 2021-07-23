@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
 html {
     margin: auto;
     scroll-behavior: smooth;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    background: #000000;
+    background: #968f8f;
+    font-family: 'Poppins', sans-serif;
     @media (max-width: 1450px){
         font-size: 70%;
     }  

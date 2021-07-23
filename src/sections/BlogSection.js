@@ -73,7 +73,7 @@ const StyledBlog = styled.div`
         }
         article {
             width: 45%;
-            height: 100%;
+            height: 700px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -81,6 +81,9 @@ const StyledBlog = styled.div`
             align-items: center;
             margin: 0 auto;
             border-radius: 8px;
+            background: lightgray;
+            box-shadow: 6px 6px 10px rgba(133, 133, 133, 0.301);
+            padding: 1em;
         }
         .blogImage {
             width: 480px;
@@ -93,17 +96,15 @@ const StyledBlog = styled.div`
         }
         .blogWriter {
             display: flex;
+            align-items: center;
             img{
                 width: 30px;
+                height: 25px;
             }
         }
-        i,
         h6 {
             font-size: 1.2em;
             margin: 6px;
-        }
-        i {
-            color: #7b45aa;
         }
         p {
             font-size: 1.2em;
